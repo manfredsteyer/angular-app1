@@ -8,7 +8,7 @@ declare const require: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   ngVersion = require('../../package.json').dependencies['@angular/core'];
 
