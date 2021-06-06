@@ -10,8 +10,8 @@ declare const require: any;
 })
 export class AppComponent {
 
-  // @Input() message: string;
-  // @Output() clicked = new EventEmitter<string>();
+  @Input() message: string;
+  @Output() clicked = new EventEmitter<string>();
 
   ngVersion = require('../../package.json').dependencies['@angular/core'];
 
