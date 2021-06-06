@@ -15,6 +15,10 @@ export class AppComponent {
 
   ngVersion = require('../../package.json').dependencies['@angular/core'];
 
+  showMessage(){
+    alert(this.message);
+  }
+
   // constructor(private router: Router) { }
 
   // ngOnInit(): void {
