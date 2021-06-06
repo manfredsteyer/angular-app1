@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 declare const require: any;
@@ -9,6 +9,9 @@ declare const require: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  @Input() message: string;
+  @Output() clicked = new EventEmitter<string>();
 
   ngVersion = require('../../package.json').dependencies['@angular/core'];
 

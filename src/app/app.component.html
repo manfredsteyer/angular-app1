@@ -5,6 +5,9 @@
 <p>
     Angular Version: {{ngVersion}}
 </p>
+<p *ngIf="message">
+    <a (click)="clicked.emit(message)">{{message}}</a>
+</p>
 <!-- <div>
     <a routerLink="mfe2/a">Route A</a> |
     <a routerLink="mfe2/b">Route B</a>
