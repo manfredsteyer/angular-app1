@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --common-chunk false",
+    "build": "ng build --common-chunk false --named-chunks false",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
