@@ -28,9 +28,9 @@ module.exports = {
       */
 
       shared: {
-        "@angular/core": { },
-        "@angular/common": { },
-        "@angular/router": { },
+        "@angular/core": { requiredVersion: "12.0.3" },
+        "@angular/common": { requiredVersion: "12.0.3" },
+        "@angular/router": { requiredVersion: "12.0.3" },
         "rxjs": {}
       }
     }
